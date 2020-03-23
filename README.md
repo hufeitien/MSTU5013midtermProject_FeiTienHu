@@ -1,5 +1,5 @@
 # Fei-Tien Hu's MSTU 5013 Midterm Project: “Citizen's journey”
-  * Web url: https://hufeitien.github.io/5003FinalProject-/
+  * Web url: https://hufeitien.github.io/MSTU5013midtermProject_FeiTienHu/index.html
   * fh2393@tc.columbia.edu  
   * Instructioanl Technology and Media, Teachers College, Columbia University
 
