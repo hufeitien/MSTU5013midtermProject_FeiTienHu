@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Citizen's Journey_ FeiTien's 5013 Midterm Project</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1>Your journey as a citizen starts here! </h1>
+
+  <div id="app">
+    <div class="formarea">
+      <form @submit.prevent="submitForm">
+        <label>What's your name? <input v-model="name" type="text" placeholder="They call me..."> </label>
+        <br><br>
+
+        <label>
+          What's your gender?
+          <select v-model="gender">
+            <option value="" disabled>----</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+          </select>
+          <br><br>
+          What's your birth date? <input v-model="birthdate" type="date">
+        </label>
+        <br><br>
+
+        <label>
+          How do you feel today？ (1-10) 😫
+          <input v-model="mood" type="range" min=0 max=10 @change="feelingValue"> 😄 <br>
+
+          <br>
+          <label> Tell me about you! <br>
+            <textarea v-model="intro" cols="30" rows="10" placeholder="If you don't know what to say, you can just put one sentence introduction, or just a couple of nouns or adverbs. E.g. I am from Taiwan. I love bubble milk tea.">  </textarea>
+          </label> <br>
+          <button @click="create"> CREATE YOUR PROFILE</button>
+        <p style="font-size:10px"> (You can change your mood levl after you create profile. Guess what will happen!) </p>
+      </form>
+    </div>
+
+    <br>
+
+    <div v-show="display" class="profilearea" :style="feelingStyle">
+      <h2> Citizen Profile </h2>
+      <div class="profile-container">
+      <div>
+      <p class="profile"> {{ profilepic }}</p></div>
+      <div class="infoarea">
+      <p> Name: {{ name }} </p>
+      <p> {{ gender }}</p>
+      <p> Birth Date: {{ birthdate }}</p>
+      <p> {{ intro }}</p>
+      <p> </p>
+      <img src="profileurl" alt="">
+        </div>
+      </div>
+    </div>
+
+<!-- target="_blank" -->
+
+<a href="page2.html" >
+      <div class="btn">
+        <button> NEXT STEP </button></div></a>
+
+  </div>
+
+       <h5>Made with &#128150; by FeiTien 2020 </h5>
+
+
+ <script src="./js/vue.js"></script>
+ <script src="./js/main.js"></script>
+
+
+</body>
+</html>

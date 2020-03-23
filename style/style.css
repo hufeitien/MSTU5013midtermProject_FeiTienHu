@@ -1,0 +1,103 @@
+/* *{
+  border: solid 1px grey;
+} */
+*{
+font-family: 'Fira Sans Condensed', sans-serif;
+position: relative;
+}
+
+body,
+html {
+  font-family: "Fira Sans Condensed", sans-serif;
+  position: relative;
+  color: #3b3737;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(99, 202, 236, 1) 0%,
+    rgba(162, 162, 236, 1) 90.2%
+  );
+
+}
+
+#app {
+
+
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.formarea {
+  text-align:center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 30px 40px -20px rgba(0, 0, 0, 0.25);
+
+}
+
+.profilearea {
+  display: float;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 500px;
+  padding:10px;
+}
+
+.profile {
+  font-size: 8em;
+  margin: 0;
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 50% 50%;
+  text-align: center;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.infoarea {
+  display: inline-block;
+  margin: 20px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn{
+  text-align:center;
+  border-radius:5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+
+}
+
+button{
+  border-radius:5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-image: linear-gradient( 68.5deg,  rgba(97,68,194,1) 0.6%, rgba(96,184,214,1) 99.5% );
+  letter-spacing:2px;
+}
+
+h5{
+
+  text-align:center;
+}

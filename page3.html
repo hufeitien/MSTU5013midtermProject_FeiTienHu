@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+  <title>Citizen's Journey_page3_Feitien's 5013 midterm project</title>
+    <link rel="stylesheet" href="./style/page3.css">
+</head>
+<body>
+
+  <h1> Referendum Questions </h1>
+
+  <div id="app">
+
+    <questions v-for="question in referendumData" :question-info="question" :like-image="likeimg">
+    </questions>
+
+  <!--   <p v-for="question in referendumData"> {{ question }}
+    </p> -->
+
+  </div>
+<h5>Made with &#128150; by FeiTien 2020 </h5>
+  <!--
+  my question: can I put my comment section on the root component instead of putting them in another child component? -->
+
+
+
+
+    <script src="./js/vue.js"></script>
+    <script src="./js/page3.js"></script>
+</body>
+</html>
